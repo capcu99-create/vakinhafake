@@ -144,10 +144,12 @@
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             margin-bottom: 30px;
+            background: #000;
         }
         
         .video-container video {
             width: 100%;
+            height: auto;
             display: block;
         }
         
@@ -281,6 +283,10 @@
             align-items: center;
             gap: 15px;
             margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .org-logo {
@@ -590,6 +596,10 @@
             setTimeout(() => {
                 progressFill.style.width = '68%';
             }, 500);
+            
+            // Auto-play video (opcional - descomente se quiser)
+            // const video = document.querySelector('video');
+            // video.play();
         });
     </script>
 </body>
